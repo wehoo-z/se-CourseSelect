@@ -36,6 +36,7 @@ Rails.application.routes.draw do
   post 'sessions/login' => 'sessions#create'
   delete 'sessions/logout' => 'sessions#destroy'
 
+  get 'credit/courses' => 'courses#credit'
 
   # Example resource route with options:
   #   resources :products do

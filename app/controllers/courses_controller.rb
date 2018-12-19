@@ -84,7 +84,29 @@ class CoursesController < ApplicationController
     redirect_to courses_path, flash: flash
   end
 
+  def credit
+    @courses=current_user.courses if student_logged_in?
 
+    #计算已选的学分
+    selectedCredit=0.0
+    @courses.each do |course|
+      selectedCredit += course.credit.split('/')[1].to_f
+    end
+
+    #计算已经获得的学分
+    gotScore = 0.0
+    @grades=current_user.grades
+    @grades.each do |grade|
+      if !grade.grade.nil? && grade.grade >= 60
+        gotScore += grade.course.credit.split('/')[1].to_f
+      end
+    end
+
+    @row = @courses.size
+    @scoreNeed = 20
+    @scoreGot = gotScore
+    @scoreSelect = selectedCredit
+  end
   #-------------------------for both teachers and students----------------------
 
   def index

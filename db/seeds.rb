@@ -81,8 +81,7 @@ teacher_map={
     28 => {name: "刘智勇", department: "自动化研究所"},
     29 => {name: "赵军锁", department: "软件研究所"},
     30 => {name: "陈玉福", department: "软件研究所"},
-    31 => {name: "刘玉贵", department: "计算机与控制学院"},
-    32 => {name: "王文杰", department: "计算机与控制学院"},
+    31 => {name: "刘玉贵", department: "计算机与控制学院"},    32 => {name: "王文杰", department: "计算机与控制学院"},
     33 => {name: "苏桂平", department: "计算机与控制学院"},
     34 => {name: "张晋连", department: "计算机与控制学院"}
 }
@@ -139,6 +138,7 @@ teacher_map.keys.each do |index|
       name: course_map[index][:name],
       course_type: course_map[index][:course_type],
       credit: course_map[index][:credit],
+      
       limit_num: course_map[index][:limit_num],
       course_week: course_map[index][:course_week],
       course_time: course_map[index][:course_time],
