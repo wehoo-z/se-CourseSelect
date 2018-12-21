@@ -17,9 +17,12 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root 'homes#index'
 
+  get   'courses/list/:name'  => 'courses#list',:as => 'query'
+
   resources :courses do
     member do
       get :select
+      post :select   #wsy
       get :quit
       get :open
       get :close
@@ -37,6 +40,7 @@ Rails.application.routes.draw do
   delete 'sessions/logout' => 'sessions#destroy'
 
   get 'credit/courses' => 'courses#credit'
+  # get 'search/courses' => 'courses#search'
 
   # Example resource route with options:
   #   resources :products do

@@ -185,6 +185,11 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (11.2.2)
+    ransack (1.8.9)
+      actionpack (>= 3.0, <= 5.1.1)
+      activerecord (>= 3.0, <= 5.1.1)
+      activesupport (>= 3.0, <= 5.1.1)
+      i18n
     rdoc (4.2.2)
       json (~> 1.4)
     ref (2.0.0)
@@ -210,6 +215,9 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    simple_form (4.0.0)
+      actionpack (> 4)
+      activemodel (> 4)
     simplecov (0.11.1)
       docile (~> 1.1.0)
       json (~> 1.8)
@@ -268,11 +276,13 @@ DEPENDENCIES
   rails-i18n
   rails_12factor
   rails_admin (~> 0.8.1)
+  ransack
   roo
   roo-xls
   rubyzip (~> 1.1.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  simple_form
   simplecov
   spring
   therubyracer
