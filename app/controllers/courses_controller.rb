@@ -1,5 +1,5 @@
 class CoursesController < ApplicationController
-
+  include CoursesHelper
   before_action :student_logged_in, only: [:select, :quit, :list]
   before_action :teacher_logged_in, only: [:new, :create, :edit, :destroy, :update, :open, :close]#add open by qiao
   before_action :logged_in, only: :index
@@ -86,7 +86,6 @@ class CoursesController < ApplicationController
   end
 
 
-
   def list #wsy
     @courses = Course.where(:open=>true).paginate(page: params[:page], per_page: 8) 
     if current_user.nil?
@@ -161,13 +160,21 @@ class CoursesController < ApplicationController
     if course.open==true && course.course_type == @tmp_status
       tmp<<course
     end
+   end
+   @course=tmp
+end
+end
+end
+
+  def scheduler
+    #展示课表
+    @course=current_user.teaching_courses if teacher_logged_in?
+    @course=current_user.courses if student_logged_in?
+    #@course=Course.where(:open=>true)
+    #@course=@course-current_user.courses
+    @course_time_table = get_course_table(@course)
   end
-  @course=tmp
 
-
-end
-end
-end
 
 
 # def select

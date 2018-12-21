@@ -34,6 +34,8 @@ Rails.application.routes.draw do
 
   resources :grades, only: [:index, :update]
   resources :users
+  resources :notices
+  resources :opensystems
 
   get 'sessions/login' => 'sessions#new'
   post 'sessions/login' => 'sessions#create'
@@ -42,6 +44,8 @@ Rails.application.routes.draw do
   get 'credit/courses' => 'courses#credit'
   # get 'search/courses' => 'courses#search'
 
+  get 'scheduler/courses' => 'courses#scheduler'
+  
   # Example resource route with options:
   #   resources :products do
   #     member do

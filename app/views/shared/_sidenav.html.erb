@@ -48,6 +48,13 @@
               <% end %>
             </li>
             <li class="list-group-item">
+              <%= link_to scheduler_courses_path do %>
+                  <span class="glyphicon glyphicon-chevron-right"></span> 学生课表
+                    <%= current_user.courses.length %>
+                  </span>
+              <% end %>
+            </li>
+            <li class="list-group-item">
               <%= link_to credit_courses_path do %>
                   <span class="glyphicon glyphicon-chevron-right"></span> 学分统计
               <% end %>
