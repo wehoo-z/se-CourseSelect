@@ -57,33 +57,33 @@ class CoursesController < ApplicationController
 
   #-------------------------for students----------------------
 
-  def list
-    @courses = Course.where(:open=>true).paginate(page: params[:page], per_page: 4)
-    if !params[:key].nil? && params[:key] != "全部"
-      @coursesFilt = Course.where("name like ? and open = true","%#{params[:key]}%").paginate(page: params[:page], per_page: 4)
-      @course = @coursesFilt-current_user.courses
-         # render json: @courses, location: list_courses_url(@course), flash: flash 
-       else
-        @course = @courses-current_user.courses
-      end
+  # def list
+  #   @courses = Course.where(:open=>true).paginate(page: params[:page], per_page: 4)
+  #   if !params[:key].nil? && params[:key] != "全部"
+  #     @coursesFilt = Course.where("name like ? and open = true","%#{params[:key]}%").paginate(page: params[:page], per_page: 4)
+  #     @course = @coursesFilt-current_user.courses
+  #        # render json: @courses, location: list_courses_url(@course), flash: flash 
+  #      else
+  #       @course = @courses-current_user.courses
+  #     end
 
-      if @course.size > 0
-        flash={:info => "查询到"+@course.size.to_s+"条数据"}
-      else
-        flash={:warning => "未查询到相关课程"}
-      end
+  #     if @course.size > 0
+  #       flash={:info => "查询到"+@course.size.to_s+"条数据"}
+  #     else
+  #       flash={:warning => "未查询到相关课程"}
+  #     end
       
-    # @course = @courses-current_user.courses
-    tmp=[]
-    @course.each do |course|
-      if course.open==true
-        tmp<<course
-      end
-    end
-    @course=tmp
-    render location: list_courses_url(@course), flash: flash     
-    # render json: @course, location: list_courses_url(@course), flash: flash 
-  end
+  #   # @course = @courses-current_user.courses
+  #   tmp=[]
+  #   @course.each do |course|
+  #     if course.open==true
+  #       tmp<<course
+  #     end
+  #   end
+  #   @course=tmp
+  #   render location: list_courses_url(@course), flash: flash     
+  #   # render json: @course, location: list_courses_url(@course), flash: flash 
+  # end
 
 
   def list #wsy
