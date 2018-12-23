@@ -13,6 +13,10 @@ development:
 test:
   <<: *default
   database: courseselect_test
+  username: dbuser
+  password: dbuser
+  host: localhost
+  pool: 5
 
 production:
   <<: *default
