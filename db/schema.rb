@@ -10,8 +10,9 @@
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
 # It's strongly recommended that you check this file into your version control system.
-
-ActiveRecord::Schema.define(version: 20181222061401) do
+ 
+# ActiveRecord::Schema.define(version: 20181222061401) do  wsy for merge conflict
+ActiveRecord::Schema.define(version: 20181222055210) do 
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
