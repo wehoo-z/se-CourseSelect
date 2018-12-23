@@ -43,9 +43,12 @@ Rails.application.routes.draw do
 
   get 'credit/courses' => 'courses#credit'
   # get 'search/courses' => 'courses#search'
-
-  get 'scheduler/courses' => 'courses#scheduler'
   
+  get 'scheduler/courses' => 'courses#scheduler'
+ 
+  #成绩单的导入导出
+  get 'grades/export' =>"grades#export"
+  post 'grades/import' =>"grades#import"
   # Example resource route with options:
   #   resources :products do
   #     member do
