@@ -50,7 +50,7 @@
             <li class="list-group-item">
               <%= link_to scheduler_courses_path do %>
                   <span class="glyphicon glyphicon-chevron-right"></span> 学生课表
-                    <%= current_user.courses.length %>
+                  <span class="label label-info pull-right"><%= current_user.courses.count %></span>
                   </span>
               <% end %>
             </li>
