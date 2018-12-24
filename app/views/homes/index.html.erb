@@ -1,75 +1,169 @@
 <div class="container">
 
-
   <div class="row">
-    <div class="col-md-8" style="background-color: #18BC9C;padding-bottom: 10px;padding-top: 10px">
-      <div style="font-size: 50px; padding-left: 50px">
-        <%= image_tag "profile.png" %>
-        Learning RoR!
-      </div>
 
-    </div>
-
-    <div class="col-md-4">
-      <h1>在线选课系统样本</h1>
-      <p>这个样本系统是基于国科大研究生课程(高级软件工程)开发的项目,目的是帮助入门者学习RoR(Ruby on Rails),这是适合新学者的入手的第一个项目</p>
-      <p>入门者可以在这个样本系统上增加更多的功能:</p>
-      <ul>
-
-        <li class="text-danger">
-          处理选课冲突、控制选课人数
-        </li>
-        <li class="text-danger">
-          统计选课学分,增加选课的开放、关闭功能
-        </li>
-        <li class="text-danger">
-          自定义管理员后台
-        </li>
-        <li class="text-danger">
-          基于OAuth的授权登陆
-        </li>
-        <li class="text-danger">
-          Excel格式的数据导入
-        </li>
-      </ul>
-
-    </div>
-
-  </div>
-
-  <hr>
-
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="alert alert-info text-center">
-        开发此项目,你需要具备以下的知识:
+    <!-- 轮播 -->
+    <div class="col-md-8" style="padding-bottom: 10px;padding-top: 10px">
+      <div id="myCarousel" class="carousel slide">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <%=  image_tag("4.jpg",width: 1280 , height: 360)%>
+            <div class="carousel-caption"> </div>
+          </div>
+          <div class="item">
+            <%=  image_tag("3.jpg",width: 1280 , height: 360)%>
+            <div class="carousel-caption"> </div>
+          </div>
+          <div class="item">
+            <%=  image_tag("2.jpg",width: 1280 , height: 360)%>
+            <div class="carousel-caption"> </div>
+          </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
       </div>
     </div>
+    <!-- 选择 -->
+    <div class="col-md-4" style="padding-bottom: 10px;padding-top: 10px">
+      <div class="tabbable custom-tab ">
+        <ul class="nav nav-tabs">
+          <li class=""><a href="#created" data-toggle="tab"><strong>最新发布</strong></a></li>
+          <li class="active"><a href="#hits" data-toggle="tab"><strong>热点排行</strong></a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane  active" id="hits">
+            <ol>
+              <p></p>
+              <li>
+                <a class="title-cut " href="http://news.ucas.ac.cn/ywsd/488824-340-2018-11-27-10-25-07.html" title="中国科学院大学首个临床医学院揭牌成立">
+                  中国科学院大学首个临床医学院揭牌成立				</a>
+                <small>Nov  26.2018</small>
+              </li>
+              <li>
+                <a class="title-cut " href="http://news.ucas.ac.cn/jxyd/489046-369-2018-12-07-18-53-10.html" title="国科大举办“行星科学”一级学科建设论证评审会">
+                  国科大举办“行星科学”一级学科建设论证评审会				</a>
+                <small>Dev  6.2018</small>
+              </li>
+              <li>
+                <a class="title-cut " href="http://news.ucas.ac.cn/xshd/489474-“十二五”国家重大科技基础设施“强流重离子加速器装置”（HIAF）在惠州启动建设" title="“十二五”国家重大科技基础设施“强流重离子加速器装置”（HIAF）在惠州启动建设">
+                  “十二五”国家重大科技基础设施“强流重离子加速器装置”（HIAF）在惠州启动建设				</a>
+                <small>Dev  24.2018</small>
+              </li>
+              <li>
+                <a class="title-cut " href="http://news.ucas.ac.cn/ywsd/489458-中国科学院大学一带一路学院在义乌揭牌成立" title="中国科学院大学一带一路学院在义乌揭牌成立">
+                  中国科学院大学一带一路学院在义乌揭牌成立				</a>
+                <small>Dev  4.2018</small>
+              </li>
+              <li>
+                <a class="title-cut " href="http://news.ucas.ac.cn/ywsd/339385-白春礼在国科大2017级新生开学典礼上的讲话	" title="【网上开学典礼】白春礼在国科大2017级新生开学典礼上的讲话">
+                  【网上开学典礼】白春礼在国科大2017级新生开学典礼上的讲话				</a><small>Sep  10.2018</small>
+              </li>
+            </ol>
+          </div>
+
+          <!--//m-pagebox:end-->
+          <div class="tab-pane" id="created">
+            <ol>
+              <p></p>
+              <li>
+                <a class="title-cut " href="http://news.ucas.ac.cn/ywsd/489407-国科大获评2018年北京地区高校大学生优秀创业团队“优秀组织奖”" title="国科大获评2018年北京地区高校大学生优秀创业团队“优秀组织奖”">
+                  国科大获评2018年北京地区高校大学生优秀创业团队“优秀组织奖”				</a>
+                <small>Dev  21.2018</small>
+              </li>
+              <li>
+                <a class="title-cut " href="http://news.ucas.ac.cn/ywsd/489279-国科大召开共青团第一次代表大会" title="国科大召开共青团第一次代表大会">
+                  国科大召开共青团第一次代表大会				</a>
+                <small>Dev  18.2018</small>
+              </li>
+              <li>
+                <a class="title-cut " href="http://news.ucas.ac.cn/ywsd/489189-国科大与意大利特伦托大学签订合作协议" title="国科大与意大利特伦托大学签订合作协议">
+                  国科大与意大利特伦托大学签订合作协议				</a>
+                <small>Dev  13.2018</small>
+              </li>
+              <li>
+                <a class="title-cut " href="http://news.ucas.ac.cn/ywsd/489047-双一流”建设国际化战略咨询委员会第一次会议在浙江举办" title="双一流”建设国际化战略咨询委员会第一次会议在浙江举办">
+                  双一流”建设国际化战略咨询委员会第一次会议在浙江举办				</a>
+                <small>Dev  7.2018</small>
+              </li>
+              <li>
+                <a class="title-cut " href="http://news.ucas.ac.cn/ywsd/488768-重庆十一中正式挂牌中国科学院大学重庆学院附属科技中学" title="重庆十一中正式挂牌中国科学院大学重庆学院附属科技中学">
+                  重庆十一中正式挂牌中国科学院大学重庆学院附属科技中学			</a>
+                <small>Nov  29.2018</small>
+              </li>
+
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
-
 
   <div class="row">
-    <div class="col-md-4">
-      <h2>Bootstrap</h2>
-      <p>Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷. 它由Twitter的设计师Mark
-        Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。</p>
-      <a class="btn btn-info" href="http://www.w3schools.com/bootstrap/">More Info</a>
+
+    <!-- 新闻 -->
+    <div class="col-md-7" style="padding-bottom: 10px;padding-top: 10px">
+      <div id="home-news">
+        <div class="panel">
+          <div class="panel-head s2">
+            <blockquote>
+              <h3 class="panel2-head-title"><strong><span>新闻聚焦</span></strong></h3>
+            </blockquote>
+          </div>
+          <div class="panel-body" style="height:350px;">
+            <ul class="home-news-list" id="xwjj">
+              <li>
+                <a title="国科大党委理论学习中心组举行第八次学习会" href="http://news.ucas.ac.cn/ywsd/489416-国科大党委理论学习中心组举行第八次学习会">国科大党委理论学习中心组举行第八次学习会</a>
+                <p>12月20日下午，中国科学院大学党委理论学习中心组在玉泉路校区礼堂报告厅举行2018年第八次学习会（扩大会），学习习近平总书记在庆祝改革开放40周年大会上的讲话，进一步深化对培养创新人才的认识。(全文......)</p>
+              </li>
+              <li>
+                <a title="本科拔尖创新人才培养专题论坛在京举办" href="http://news.ucas.ac.cn/ywsd/489281-本科拔尖创新人才培养专题论坛在京举办">本科拔尖创新人才培养专题论坛在京举办</a>
+                <p> 12月16日，“办好一流本科教育，培养拔尖创新人才”专题论坛在中国科学院大学玉泉路校区举办。(全文......)</p>
+              </li>
+              <li>
+                <a title="国科大举办校部研究生导师培训”" href="http://news.ucas.ac.cn/ywsd/489287-责任、使命与担当">国科大举办校部研究生导师培训”</a>
+                <p> 2018年12月10至11日，中国科学院大学（以下简称“国科大”）培养与学位部在雁栖湖校区举办校部研究生导师培训会，共有100余名研究生导师参加。(全文......)</p>
+              </li>
+              <li>
+                <a title="国科大与山东聊城冠县人民政府举行合作洽谈会" href="http://news.ucas.ac.cn/ywsd/489361-国科大与山东聊城冠县人民政府举行合作洽谈会">国科大与山东聊城冠县人民政府举行合作洽谈会</a>
+                <p>12月7日上午，中国科学院大学（以下简称“国科大”）与山东聊城冠县人民政府合作洽谈会在国科大中关村校区举行。双方就科技成果转移转化、高端人才对接、地方产业研究等合作领域展开研讨。(全文......)</p>
+              </li>
+
+            </ul>
+          </div><!-- // panel-body:end -->
+
+        </div><!-- // panel:end -->
+      </div>
     </div>
 
-    <div class="col-md-4">
-      <h2>Javascript/CSS</h2>
-      <p>JavaScript一种直译式脚本语言,广泛用于客户端的脚本语言,是一种动态类型、弱类型、基于原型的语言，内置支持类型，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。CSS
-        (Cascading Style Sheets)是一种用来表现HTML样式的样式语言,能够真正做到网页表现与内容分离。
-      </p>
-      <a class="btn btn-info" href="http://www.runoob.com/js/js-tutorial.html">More Info</a>
-    </div>
-
-    <div class="col-md-4">
-      <h2>Rails Framework</h2>
-      <p>Rails基于MVC（模型- 视图- 控制器）设计模式。从视图中的Ajax应用，到控制器中的访问请求和反馈，到封装数据库的模型，Rails
-        为你提供一个纯Ruby的开发环境,它基于一种计算机软件语言Ruby,给程序开发人员提供了强大的框架支持。Rails结合了PHP体系的优点（快速开发）和Java体系的优点（程序规整）</p>
-      <a class="btn btn-info" href="http://guides.ruby-china.org/">More Info</a>
+    <!-- 快捷通道 -->
+    <div class="col-md-5" style="padding-bottom: 10px;padding-top: 10px">
+      <div id="home-qlink">
+        <blockquote>
+          <h3> <strong><span>快速通道</span></strong></h3>
+        </blockquote>
+        <div class="panel-body">
+          <%=image_tag "kslj.png", {usemap:"#Map5"}%>
+          <map name="Map5">
+            <area shape="rect" coords="6,8,94,227" href="http://service.ucas.ac.cn/" target="_blank" title="校园服务">
+            <area shape="rect" coords="108,9,334,100" href="http://sep.ucas.ac.cn/" target="_blank" title="信息门户">
+            <area shape="rect" coords="350,7,426,154" href="http://job.ucas.ac.cn/" target="_blank" title="就业信息">
+            <area shape="rect" coords="108,106,333,155" href="http://www.cas.cn/" target="_blank" title="中国科学院">
+            <area shape="rect" coords="110,170,235,224" href="http://lib.ucas.ac.cn/" target="_blank" title="图书馆">
+            <area shape="rect" coords="251,172,420,227" href="/site/229" target="_blank" title="校长信箱">
+          </map>
+        </div><!-- // panel-body:end -->
+      </div>
     </div>
   </div>
+
 </div>
