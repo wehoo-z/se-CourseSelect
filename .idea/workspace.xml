@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7b1c0f9-5303-4042-90a5-05cecbda0e94" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vim.iml" afterPath="$PROJECT_DIR$/.idea/vim.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/homes/index.html.erb" afterPath="$PROJECT_DIR$/app/views/homes/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160818081955_create_users.rb" afterPath="$PROJECT_DIR$/db/migrate/20160818081955_create_users.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160907152104_create_courses.rb" afterPath="$PROJECT_DIR$/db/migrate/20160907152104_create_courses.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160909105514_create_grades.rb" afterPath="$PROJECT_DIR$/db/migrate/20160909105514_create_grades.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20161109084337_add_course_attribute.rb" afterPath="$PROJECT_DIR$/db/migrate/20161109084337_add_course_attribute.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20181220081933_add_degree_to_grades.rb" afterPath="$PROJECT_DIR$/db/migrate/20181220081933_add_degree_to_grades.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20181222054130_create_notices.rb" afterPath="$PROJECT_DIR$/db/migrate/20181222054130_create_notices.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20181222055210_create_opensystems.rb" afterPath="$PROJECT_DIR$/db/migrate/20181222055210_create_opensystems.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="vim.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,12 +54,12 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/homes/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+            <state relative-caret-position="54">
+              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#1162#1170#1#HTML" expanded="true" />
-                <element signature="e#1254#1262#1#HTML" expanded="true" />
+                <element signature="e#1179#1187#1#HTML" expanded="true" />
+                <element signature="e#1271#1279#1#HTML" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -172,7 +161,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="65" />
     <option name="y" value="24" />
     <option name="width" value="1280" />
@@ -491,12 +480,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1469151659389</updated>
-      <workItem from="1545623220421" duration="5640000" />
+      <workItem from="1545623220421" duration="6267000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5640000" />
+    <option name="totallyTimeSpent" value="6267000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -508,7 +497,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="7" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39448053" sideWeight="0.4858757" order="1" side_tool="false" content_ui="combo" />
@@ -872,22 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/images/4.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -919,14 +892,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/homes/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        <state relative-caret-position="54">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#1162#1170#1#HTML" expanded="true" />
-            <element signature="e#1254#1262#1#HTML" expanded="true" />
+            <element signature="e#1179#1187#1#HTML" expanded="true" />
+            <element signature="e#1271#1279#1#HTML" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
