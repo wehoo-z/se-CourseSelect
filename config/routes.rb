@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :demos
+  resources :lectures
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -32,6 +34,8 @@ Rails.application.routes.draw do
     end
   end
 
+
+
   resources :grades, only: [:index, :update]
   resources :users
   resources :notices
@@ -49,6 +53,7 @@ Rails.application.routes.draw do
   #成绩单的导入导出
   get 'grades/export' =>"grades#export"
   post 'grades/import' =>"grades#import"
+
   # Example resource route with options:
   #   resources :products do
   #     member do
