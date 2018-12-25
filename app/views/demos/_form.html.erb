@@ -1,0 +1,32 @@
+<%= form_with(model: demo, local: true) do |form| %>
+  <% if demo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(demo.errors.count, "error") %> prohibited this demo from being saved:</h2>
+
+      <ul>
+      <% demo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :uptime %>
+    <%= form.text_field :uptime %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
