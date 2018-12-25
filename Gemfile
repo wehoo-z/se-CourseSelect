@@ -1,5 +1,6 @@
 source 'https://gems.ruby-china.com'
 
+# gem 'ruby','~>2.3.0' #wsy
 gem 'bootstrap-sass', '~> 3.3.7'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.11'

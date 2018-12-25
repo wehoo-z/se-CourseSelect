@@ -32,4 +32,9 @@ class ActionDispatch::IntegrationTest
                                                  password: password,
                                                  remember_me: remember_me } })
   end
+
+  #added by wsy
+  def log_out()
+    delete sessions_logout_path()
+  end
 end
