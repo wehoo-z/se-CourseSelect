@@ -31,7 +31,6 @@ ActiveRecord::Schema.define(version: 2018_12_25_081731) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "open", default: false
-    t.index ["teacher_id"], name: "index_courses_on_teacher_id"
   end
 
   create_table "demos", force: :cascade do |t|
@@ -53,7 +52,7 @@ ActiveRecord::Schema.define(version: 2018_12_25_081731) do
     t.index ["user_id"], name: "index_grades_on_user_id"
   end
 
-  create_table "lectures", force: :cascade do |t|
+  create_table "lectures", id: :serial, force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
